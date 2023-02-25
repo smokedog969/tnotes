@@ -9,7 +9,7 @@ const Public = () => {
             <main className="public__main">
                 <p>This App was greated to store all notes and todos</p>
                 {/* <address className="public__addr">
-                    Dan D. Repairs<br />
+                    Steffen Schafrik<br />
                     555 Foo Drive<br />
                     Foo City, CA 12345<br />
                     <a href="tel:+15555555555">(555) 555-5555</a>
