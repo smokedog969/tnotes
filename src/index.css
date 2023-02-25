@@ -22,7 +22,6 @@
   --STATUS-OPEN: firebrick;
   --TABLE-BGCOLOR: #FFF;
   --TABLE-COLOR: #000;
-  --INPUT-INVALID: #F00;
 }
 
 /* || UTILITY CLASSES */
@@ -46,7 +45,7 @@
 .icon-button {
   width: 48px;
   height: 48px;
-  font-size: 2.5rem;
+  font-size: 2rem;
   background-color: transparent;
   border: none;
   color: var(--COLOR);
@@ -94,7 +93,8 @@ a {
   text-decoration: none;
 }
 
-a:any-link {
+a,
+a:visited {
   color: var(--LINK-COLOR);
 }
 
@@ -151,10 +151,6 @@ a:focus-visible {
   align-items: center;
 }
 
-.dash-header__container--small {
-  max-width: 800px;
-}
-
 .dash-header__nav {
   display: flex;
   flex-flow: row nowrap;
@@ -186,6 +182,7 @@ a:focus-visible {
   width: auto;
   height: auto;
 }
+
 
 /* || TABLES - GENERAL */
 
@@ -221,6 +218,7 @@ tr {
   background-color: var(--TABLE-BGCOLOR);
   text-align: left;
   border: 1px solid var(--TABLE-COLOR);
+  border-radius: 5px;
   padding: 0.5em;
 }
 
@@ -294,9 +292,10 @@ tr {
 }
 
 .form__input--incomplete {
-  border: 1px solid var(--INPUT-INVALID);
-  outline: 1px solid var(--INPUT-INVALID);
+  border: 1px solid red;
+  outline: 1px solid red;
 }
+
 
 .form__checkbox {
   width: 24px;
@@ -342,7 +341,6 @@ tr {
     font-size: 1.5rem;
   }
 }
-
 
 @media screen and (min-width: 768px) {
 

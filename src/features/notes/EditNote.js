@@ -11,7 +11,8 @@ const EditNote = () => {
 
     const { id } = useParams()
 
-    const { username, isManager, isAdmin } = useAuth()
+    //const { username, isManager, isAdmin } = useAuth()
+    const { username, isManager, isAdmin, isGat, isFbo } = useAuth()
 
     const { note } = useGetNotesQuery("notesList", {
         selectFromResult: ({ data }) => ({
@@ -28,7 +29,7 @@ const EditNote = () => {
     if (!note || !users?.length) return <PulseLoader color={"#FFF"} />
 
 
-    if (!isManager && !isAdmin) {
+    if (!isManager && !isAdmin && !isGat && !isFbo) {
         if (note.username !== username) {
             return <p className="errmsg">No access</p>
         }
