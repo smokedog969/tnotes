@@ -4,7 +4,7 @@ const Public = () => {
     const content = (
         <section className="public">
             <header>
-                <h1>Welcome to <span className="nowrap">STS-Notes!</span></h1>
+                <h1>Welcome to <span className="nowrap">TechNotes</span></h1>
             </header>
             <main className="public__main">
                 <p>This App was greated to store all notes and todos</p>
